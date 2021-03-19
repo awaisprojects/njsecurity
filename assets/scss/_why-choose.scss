@@ -1,0 +1,98 @@
+/*======================================
+    Why Choose CSS
+========================================*/
+
+.why-choose {
+    background-color: $gray;
+
+    .left {
+        position: relative;
+        border-radius: 7px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .video {
+            position: absolute;
+            height: 80px;
+            width: 80px;
+            line-height: 80px;
+            text-align: center;
+            color: $theme-color;
+            background-color: $white;
+            border-radius: 50%;
+            left: 50%;
+            top: 50%;
+            margin-left: -40px;
+            margin-top: -40px;
+            font-size: 16px;
+            padding-left: 3px;
+            transition: all 0.4s ease-in-out;
+
+            &:hover {
+                color: $white;
+                background-color: $theme-color;
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    .right {
+        padding-left: 50px;
+        padding-right: 130px;
+
+        ul {
+            li {
+                position: relative;
+                margin-bottom: 40px;
+
+                &:hover {
+                    .number {
+                        border-color: $theme-color;
+                        color: $theme-color;
+                        background-color: $white;
+                    }
+                }
+
+                &:last-child {
+                    margin: 0;
+                }
+
+                .number {
+                    max-width: 43px;
+                    min-width: 43px;
+                    max-height: 43px;
+                    min-height: 43px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #473BF0;
+                    color: $white;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    border: 3px solid transparent;
+                    transition: all 0.4s ease-in-out;
+                }
+
+                .content {
+                    display: inline-block;
+                    padding-left: 70px;
+
+                    h3 {
+                        font-size: 19px;
+                        font-weight: 600;
+                        display: block;
+                        margin-bottom: 20px;
+                    }
+
+                    p {}
+                }
+            }
+        }
+    }
+}

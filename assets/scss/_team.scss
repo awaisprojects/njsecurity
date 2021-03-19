@@ -1,0 +1,363 @@
+/*======================================
+	Team CSS
+========================================*/
+.team {
+    background-color: $gray;
+}
+
+.team .title-line {
+    margin-bottom: 40px;
+}
+
+.team .section-title {
+    margin-bottom: 50px;
+}
+
+.team .single-team {
+    margin-top: 30px;
+    position: relative;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    transition: all 500ms ease;
+    display: inline-block;
+    overflow: hidden;
+    text-align: left;
+    background: transparent;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 32px 54px 0 rgba(22, 28, 45, 0.16);
+}
+
+.team .single-team .info-head {
+    background: transparent;
+    position: relative;
+    z-index: 2;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    padding: 25px;
+}
+
+.team .single-team:hover .info-head:before {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+}
+
+.team .single-team:hover .info-head {
+    border-color: transparent;
+}
+
+.single-team .image {
+    position: relative;
+    text-align: center;
+
+    &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        height: 0;
+        width: 100%;
+        background: linear-gradient(transparent, $theme-color);
+        transition: all 0.4s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .social {
+        position: absolute;
+        left: 0;
+        bottom: -30px;
+        padding: 25px;
+        padding-bottom: 20px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.4s ease-in-out;
+
+        li {
+            display: inline-block;
+            margin-right: 15px;
+
+            &:last-child {
+                margin-right: 0px;
+            }
+
+            a {
+                color: $white;
+                display: block;
+                font-size: 15px;
+
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+
+.single-team:hover .image::before {
+    opacity: 1;
+    visibility: visible;
+    height: 150px;
+}
+
+.single-team:hover .social {
+    opacity: 1;
+    visibility: visible;
+    bottom: 0;
+}
+
+.team .single-team .info-box {
+    text-align: left;
+}
+
+.team .single-team .info-box .name {
+    display: block;
+    font-size: 17px;
+    color: #333;
+    margin-bottom: 3px;
+    text-transform: capitalize;
+}
+
+.team .single-team .info-box .name a {
+    font-weight: 600;
+    color: $black;
+    font-size: 17px;
+}
+
+.team .single-team .info-box .name a:hover {
+    color: $theme-color;
+}
+
+.team .single-team .info-box .designation {
+    color: #666;
+    font-size: 13px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+/* Team Details */
+.team-details {
+    .image {
+        border-radius: 5px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .content {
+        padding-left: 50px;
+
+        .position {
+            color: $theme-color;
+            font-weight: 500;
+            font-size: 14px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .name {
+            font-size: 32px;
+            font-weight: 600;
+            color: $black;
+        }
+
+        .des {
+            display: block;
+            margin-top: 20px;
+        }
+
+        .personal-info {
+            margin-top: 30px;
+
+            li {
+                display: block;
+                margin-bottom: 5px;
+
+                &:last-child {
+                    margin: 0;
+                }
+
+                span {
+                    color: $black;
+                }
+
+                a {
+                    color: #888;
+
+                    &:hover {
+                        color: $theme-color;
+                    }
+                }
+            }
+        }
+
+        .social {
+            margin-top: 30px;
+
+            li {
+                display: inline-block;
+                margin-right: 5px;
+
+                &:last-child {
+                    margin: 0;
+                }
+
+                a {
+                    height: 40px;
+                    width: 40px;
+                    line-height: 40px;
+                    font-size: 14px;
+                    background-color: #f4f4f4;
+                    color: $black;
+                    border-radius: 4px;
+                    display: block;
+                    text-align: center;
+
+                    &:hover {
+                        background-color: $theme-color;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    .details-info {
+        .heading {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            margin-top: 60px;
+        }
+
+        p {
+            margin: 20px 0;
+        }
+    }
+
+    .team-contact-form {
+        padding: 50px;
+        border-radius: 6px;
+        overflow: hidden;
+        background-color: $white;
+        margin-top: 60px;
+        box-shadow: 0 0 50px rgba(22, 28, 45, 0.16);
+
+        form {
+            .form-group {
+                margin-bottom: 20px;
+
+                input {
+                    height: 55px;
+                    width: 100%;
+                    background-color: $white;
+                    color: $black;
+                    border-radius: 5px;
+                    border: none;
+                    border: 1px solid #eee;
+                    font-size: 14px;
+                    padding: 0px 20px;
+                }
+
+                textarea {
+                    height: 200px;
+                    width: 100%;
+                    background-color: $white;
+                    color: $black;
+                    border-radius: 5px;
+                    border: none;
+                    border: 1px solid #eee;
+                    font-size: 14px;
+                    padding: 20px;
+                }
+            }
+
+            .button {
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+
+
+.skill-main {
+    margin-top: 60px;
+}
+
+.skill-main .single-skill {
+    margin-bottom: 50px;
+}
+
+.skill-main .skill-title h4 {
+    color: $black;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.skill-main .progress {
+    border-radius: 0px;
+    box-shadow: none;
+    background: #0046c017;
+    height: 10px;
+    border-radius: 10px;
+    overflow: visible;
+}
+
+.skill-main .progress-bar {
+    position: relative;
+    background: $theme-color;
+    border: none;
+    text-shadow: none;
+    box-shadow: none;
+    border-radius: 10px;
+    overflow: visible;
+}
+
+.skill-main .progress-bar span {
+    position: absolute;
+    right: -15px;
+    top: -45px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 11px;
+    background: $theme-color;
+    height: 35px;
+    width: 35px;
+    display: block;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 31px;
+}
+
+.skill-main .progress-bar span::before {
+    position: absolute;
+    content: "";
+    right: 9px;
+    bottom: -13px;
+    border: 8px solid $theme-color;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+}

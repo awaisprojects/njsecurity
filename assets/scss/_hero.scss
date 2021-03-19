@@ -1,0 +1,334 @@
+/*======================================
+    Hero Area CSS
+========================================*/
+.hero-area {
+    position: relative;
+    background: $gray;
+    overflow: hidden;
+
+    .hero-inner {
+        height: auto;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        z-index: 3;
+        padding-bottom: 120px;
+    }
+
+    &.style2 {
+        .tns-controls {
+            width: 100%;
+        }
+
+        .tns-controls button:first-child {
+            left: 30px;
+        }
+
+        .tns-controls button:last-child {
+            right: 30px;
+        }
+
+        .tns-controls button {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            z-index: 2;
+            color: $black;
+            font-size: 17px;
+            background: $white;
+            border: none;
+            padding: 2px 5px;
+            border-radius: 4px;
+            -webkit-transition: all .3s ease-out 0s;
+            transition: all .3s ease-out 0s;
+            position: absolute;
+            z-index: 5;
+            top: 50%;
+            margin-top: -25px;
+
+            &:hover {
+                color: $theme-color;
+            }
+        }
+
+
+        .hero-inner {
+            height: auto;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            z-index: 3;
+            padding-bottom: 120px;
+
+            &.style2 {
+                background-color: $theme-color !important;
+            }
+
+            &.overlay::before {
+                background-color: $theme-color;
+                z-index: -1;
+                opacity: 0.9;
+            }
+
+            .hero-text {
+                margin-top: 220px;
+                padding-right: 100px;
+
+                h5 {
+                    color: $white;
+                }
+
+                h1 {
+                    color: $white;
+                    font-size: 45px;
+                    font-weight: 700;
+                }
+
+                p {
+                    color: $white;
+                }
+
+                .button {
+                    .btn {
+                        background-color: $white;
+                        color: $black;
+
+                        &:hover {
+                            color: $theme-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.style3 {
+        position: relative;
+
+        .hero-inner {
+            &::before {
+                position: absolute;
+                content: "";
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, $theme-color 100%);
+                z-index: -1;
+                opacity: 1;
+            }
+
+            .hero-text {
+                margin-top: 220px;
+
+                h5 {
+                    background-color: $white;
+                    padding: 6px 15px;
+                    display: inline-block;
+                    border-radius: 4px;
+                    font-weight: 400;
+                    color: $black;
+                }
+
+                h1 {
+                    color: $white;
+                    font-weight: 700;
+                    font-size: 45px;
+                }
+
+                p {
+                    color: $white;
+                }
+
+                .button {
+                    .btn {
+                        background-color: $white;
+                        color: $black;
+
+                        &:hover {
+                            background-color: $white;
+                            color: $theme-color;
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+
+
+    .hero-text {
+        float: none;
+        margin-top: 275px;
+
+        h5 {
+            color: $theme-color;
+            font-size: 14px;
+            font-weight: 500;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-weight: 600;
+            margin-bottom: 25px;
+            color: #081828;
+            font-size: 50px;
+            line-height: 62px;
+            letter-spacing: -1px;
+            color: $black;
+        }
+
+        p {
+            font-size: 14px;
+            color: $black;
+        }
+    }
+
+
+
+}
+
+.hero-area .hero-text .button {
+    margin-top: 35px;
+}
+
+.hero-area .hero-text .button .btn {
+    margin-right: 10px;
+}
+
+.hero-area .hero-text .button .btn:hover {
+    color: #fff;
+}
+
+.hero-area .hero-text .button .btn:last-child {
+    margin-right: 0px;
+}
+
+.hero-area .hero-image {
+    float: right;
+    margin-top: 200px;
+    height: 500px;
+    width: 500px;
+    display: block;
+    border-radius: 50%;
+    background-image: url('https://via.placeholder.com/960x800');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 5;
+
+    &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        background-image: url("../images/hero/shape2.png");
+        background-repeat: no-repeat;
+        height: 100px;
+        width: 100px;
+        z-index: -1;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .shape3 {
+        position: absolute;
+        bottom: 35px;
+        right: 60px;
+        z-index: -1;
+    }
+}
+
+.hero-area .verticle-lines .vlines {
+    width: 3px;
+    height: 100%;
+    background: #473BF036;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    -webkit-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-name: lineanim;
+    animation-name: lineanim;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: cubic-bezier(.785, .135, .15, .86);
+    animation-timing-function: cubic-bezier(.785, .135, .15, .86);
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    opacity: 0.2;
+}
+
+.hero-area .verticle-lines .vlines.one {
+    left: 20%;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s
+}
+
+.hero-area .verticle-lines .vlines.two {
+    left: 40%;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+.hero-area .verticle-lines .vlines.three {
+    left: 60%;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s
+}
+
+.hero-area .verticle-lines .vlines.four {
+    left: 80%;
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s
+}
+
+
+@-webkit-keyframes lineanim {
+    50% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-transform-origin: top left;
+        transform-origin: top left
+    }
+
+    50.1% {
+        -webkit-transform-origin: bottom left;
+        transform-origin: bottom left
+    }
+
+    100% {
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+        -webkit-transform-origin: bottom left;
+        transform-origin: bottom left
+    }
+}
+
+@keyframes lineanim {
+    50% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-transform-origin: top left;
+        transform-origin: top left
+    }
+
+    50.1% {
+        -webkit-transform-origin: bottom left;
+        transform-origin: bottom left
+    }
+
+    100% {
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+        -webkit-transform-origin: bottom left;
+        transform-origin: bottom left
+    }
+}

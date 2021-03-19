@@ -1,0 +1,114 @@
+/*======================================
+    Testimonial CSS
+========================================*/
+.testimonials {
+
+    padding-bottom: 0;
+    position: relative;
+    padding-top: 0;
+
+    &.index3 {
+        padding-top: 120px;
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        left: 50%;
+        bottom: 80px;
+        height: 50%;
+        width: 1000px;
+        background-color: #bfbfbf;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        -webkit-filter: blur(35px);
+        filter: blur(30px);
+        z-index: -1;
+        opacity: 0.6;
+    }
+
+    .single-testimonial {
+        background-color: $theme-color;
+        position: relative;
+        margin-bottom: 120px;
+
+
+
+        .testimonial-content {
+            padding: 50px;
+
+
+            i {
+                font-size: 50px;
+                display: block;
+                margin-bottom: 30px;
+                color: $white;
+            }
+
+            h2 {
+                color: $white;
+                font-weight: 700;
+                font-size: 27px;
+                line-height: 45px;
+            }
+
+            .name {
+                color: $white;
+                display: block;
+                margin-top: 30px;
+                font-size: 13px;
+                font-weight: 600;
+
+                span {
+                    display: block;
+                    margin-top: 4px;
+                }
+            }
+        }
+
+        .testimonial-image {
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .testimonial-slider-head {
+        position: relative;
+
+        .tns-controls {
+            position: absolute;
+            right: 35%;
+            bottom: 180px;
+            z-index: 9;
+
+            button {
+                width: 60px;
+                height: 50px;
+                cursor: pointer;
+                z-index: 2;
+                color: $black;
+                font-size: 15px;
+                background: #fff;
+                border: 0;
+                padding: 2px 5px;
+                border-radius: 0;
+                -webkit-transition: all .3s ease-out 0s;
+                transition: all .3s ease-out 0s;
+
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+
+            button:first-child {
+                border-right: 1px solid #eee;
+            }
+
+        }
+    }
+
+
+
+}

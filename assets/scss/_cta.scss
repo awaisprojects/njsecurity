@@ -1,0 +1,100 @@
+/*======================================
+    CTA CSS
+========================================*/
+
+.cta-section {
+    background-image: url('https://via.placeholder.com/1600x670');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 5;
+
+    &.overlay::before {
+        background-color: $black;
+        opacity: 0.9;
+        z-index: -1;
+    }
+
+    .title {
+        padding: 0;
+        padding-right: 90px;
+        padding-left: 100px;
+
+        .icon {
+            height: 70px;
+            width: 70px;
+            background-color: $theme-color;
+            color: #fff;
+            line-height: 70px;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 30px;
+            border-radius: 50px 50px 50px 5px;
+            display: block;
+        }
+
+
+        h2 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #fff;
+            line-height: 43px;
+            display: block;
+            margin-bottom: 30px;
+            padding: 0;
+        }
+
+        p {
+            color: $white;
+            font-size: 15px;
+            line-height: 24px;
+        }
+    }
+
+    .cta-form {
+        background-color: $white;
+        padding: 60px;
+        border-radius: 10px;
+
+        .form-group {
+            margin-bottom: 20px;
+
+            label {
+                font-size: 14px;
+                font-weight: 500;
+                color: $black;
+                margin-bottom: 5px;
+            }
+
+            input {
+                height: 50px;
+                width: 100%;
+                border-radius: 10px;
+                color: $black;
+                border: 1px solid #eee;
+                border-radius: 10px;
+                font-size: 14px;
+                padding: 0px 20px;
+            }
+
+            select {
+                height: 50px;
+                width: 100%;
+                border-radius: 10px;
+                color: $black;
+                border: 1px solid #eee;
+                border-radius: 10px;
+                font-size: 14px;
+                padding: 0px 20px;
+            }
+        }
+
+        .button {
+            width: 100%;
+
+            .btn {
+                width: 100%;
+            }
+        }
+    }
+}
