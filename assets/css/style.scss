@@ -1,3 +1,7 @@
+.navbar-brand img {
+  width: 178px;
+}
+
 // index page banner
 .breadcrumbs1 {
   background-image: url(../images/indexBanner.png);
@@ -16,4 +20,11 @@
 // Safes
 .breadcrumbsSafes {
   background-image: url(../images/safes.jpg);
+}
+.safeDetailPage {
+  background-image: url(../images/safeDetail.jpg);
+}
+// Access Control page css start
+.accessControl {
+  background-image: url(../images/access2.jpg);
 }
