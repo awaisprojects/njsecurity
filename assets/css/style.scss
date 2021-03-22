@@ -1,9 +1,10 @@
-@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+@import url(https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 
 fieldset,
 label {
   margin: 0;
   padding: 0;
+  pointer-events: none;
 }
 
 /****** Style Star Rating Widget *****/
@@ -11,10 +12,12 @@ label {
 .rating {
   border: none;
   float: left;
+  pointer-events: none;
 }
 
 .rating > input {
   display: none;
+  pointer-events: none;
 }
 .rating > label:before {
   margin: 5px;
